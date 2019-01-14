@@ -27,6 +27,11 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+
+
+    <div v-for="key in list" :key="key.name">
+      <span>{{key.name}}</span>
+    </div>
   </div>
 </template>
 
@@ -36,8 +41,21 @@ export default {
   props: {
     msg: String
   },
+  data () {
+    return {
+      list: ''
+    }
+  },
   created () {
-    console.log(this.msg, 'this.msg')
+    // this.$ajax.get('/api/page', function (res) {
+    //   console.log(res, 'res')
+    // })
+  },
+  mounted () {
+    this.$ajax.get('/api/page', {}).then((res) => {
+      console.log(res, 'res')
+      this.list = res.data
+    })
   }
 }
 </script>
