@@ -28,7 +28,6 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
 
-
     <div v-for="key in list" :key="key.name">
       <span>{{key.name}}</span>
     </div>
@@ -52,10 +51,10 @@ export default {
     // })
   },
   mounted () {
-    this.$ajax.get('/api/page', {}).then((res) => {
-      console.log(res, 'res')
-      this.list = res.data
-    })
+    // this.$ajax.get('/api/page', {}).then((res) => {
+    //   console.log(res, 'res')
+    //   this.list = res.data
+    // })
   }
 }
 </script>
