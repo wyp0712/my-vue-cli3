@@ -1,12 +1,17 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ? '/production-sub-path/' : '/',
   devServer: {
+    open: true,
+    host: 'localhost',
+    port: 8080,
+    https: false,
     proxy: {
       '/api': {
-        target: 'http://localhost:3000', // 对应自己的接口
-        changeOrigin: true,
+        target: 'http://localhost:8080/api/',
         ws: true,
+        changeOrigin: true, // 允许跨域
         pathRewrite: {
-          '^/api': ''
+          '^/api': '' // 请求的时候写这个api就可以了
         }
       }
     }
