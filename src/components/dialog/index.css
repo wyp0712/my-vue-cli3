@@ -1,0 +1,27 @@
+.dialog_box {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.dialog_box .mask {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000000;
+  opacity: 0.6;
+}
+
+.dialog_box .tip {
+  width: 80%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: beige;
+  transform: translateX(-50%) translateY(-50%);
+}

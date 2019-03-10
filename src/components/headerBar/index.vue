@@ -1,9 +1,8 @@
 <template>
   <header class="header">
-    <div class="logo">
-      <div class="logo_bg"></div>
-      <h1>前端小站</h1>
-    </div>
+    <div class="header-left">left</div>
+    <div class="header-mid">前端小站</div>
+    <div class="header-right">right</div>
   </header>
 </template>
 
@@ -18,9 +17,7 @@ export default {
 </script>
 
 <style lang="scss">
-
-.header{
+.header {
   width: 100vw;
 }
-
 </style>
