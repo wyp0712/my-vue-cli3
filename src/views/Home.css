@@ -1,54 +1,9 @@
-.home {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.header .header-left, .header .header-mid, .header .header-right, .content .sec {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header {
-  height: 7vh;
-  background: red;
-  display: flex;
-}
-
-.header .header-left {
-  flex: 2;
-}
-
-.header .header-mid {
-  flex: 8;
-}
-
-.header .header-right {
-  flex: 2;
-}
-
-.main {
-  flex: 1;
+body {
+  height: 100%;
   overflow: hidden;
-}
-
-.content .sec {
-  width: 98vw;
-  margin-left: 1vw;
-  height: 30vh;
-  background: #eeeeee;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.content .sec img {
-  width: 90vw;
-  height: 30vh;
-}
-
-.footer {
-  height: 5vh;
-  background: red;
+  background-image: linear-gradient(90deg, #f3f3f3 2px, transparent 0), linear-gradient(#f3f3f3 2px, transparent 0), linear-gradient(90deg, #f3f3f3 1px, transparent 0), linear-gradient(#f3f3f3 1px, transparent 0);
+  background-size: 100px 100px,100px 100px,40px 40px,40px 40px;
+  background-color: #fafafa;
+  -webkit-font-smoothing: antialiased;
+  background: #f3f3f3;
 }

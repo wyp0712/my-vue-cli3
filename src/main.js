@@ -3,16 +3,12 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
+import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false
 
 new Vue({
   router,
   store,
-  // create() {
-  //   this.axios('serch/num', {}).then(res => {
-
-  //   })
-  // },
   render: h => h(App)
 }).$mount('#app')

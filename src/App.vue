@@ -9,6 +9,14 @@
 </template>
 
 <script>
+import '@/static/css/reset.css'
+export default {
+  data () {
+    return {
+      msg: 'hello VUE'
+    }
+  }
+}
 
 </script>
 <style lang="scss">
